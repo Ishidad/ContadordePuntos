@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#01820c"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1"
+    tools:context="com.mfpv.contadordepuntos.MainActivity"
+    android:baselineAligned="false">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5">
+
+        <EditText
+            android:id="@+id/team1Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:ems="10"
+            android:hint="Team Name"
+            android:inputType="textPersonName"
+            android:lines="1"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/pointsTeamA1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/points_0"
+            android:layout_below="@+id/team1Name"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/pointsTeamA2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/pointsTeamA1"
+            android:layout_below="@+id/pointsTeamA1"
+            android:src="@drawable/points_0" />
+
+        <ImageView
+            android:id="@+id/pointsTeamA3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/pointsTeamA2"
+            android:layout_below="@+id/pointsTeamA2"
+            android:src="@drawable/points_0" />
+
+        <ImageView
+            android:id="@+id/pointsTeamA4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/pointsTeamA3"
+            android:layout_below="@+id/pointsTeamA3"
+            android:src="@drawable/points_0" />
+
+        <ImageView
+            android:id="@+id/pointsTeamA5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/pointsTeamA4"
+            android:layout_below="@+id/pointsTeamA4"
+            android:src="@drawable/points_0" />
+
+        <ImageView
+            android:id="@+id/pointsTeamA6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/pointsTeamA5"
+            android:layout_below="@+id/pointsTeamA5"
+            android:src="@drawable/points_0" />
+
+        <Button
+            android:id="@+id/decreaseTeamA"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:onClick="decreasePointsTeamA"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/increaseTeamA"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:onClick="increasePointsTeamA"
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/pointsTeamA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/decreaseTeamA"
+            android:layout_toLeftOf="@id/increaseTeamA"
+            android:layout_alignTop="@+id/increaseTeamA"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:paddingTop="7dp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5">
+
+        <EditText
+            android:id="@+id/team2Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:ems="10"
+            android:hint="Team Name"
+            android:inputType="textPersonName"
+            android:lines="1"
+            android:textAlignment="center" />
+
+
+        <ImageView
+            android:id="@+id/pointsTeamB1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/team2Name"
+            android:layout_marginStart="54dp"
+            android:src="@drawable/points_0" />
+
+        <ImageView
+            android:id="@+id/pointsTeamB2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/pointsTeamB1"
+            android:layout_below="@+id/pointsTeamB1"
+            android:src="@drawable/points_0" />
+
+        <ImageView
+            android:id="@+id/pointsTeamB3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/pointsTeamB2"
+            android:layout_below="@+id/pointsTeamB2"
+            android:src="@drawable/points_0" />
+
+        <ImageView
+            android:id="@+id/pointsTeamB4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/pointsTeamB3"
+            android:src="@drawable/points_0"
+            android:layout_below="@+id/pointsTeamB3" />
+
+        <ImageView
+            android:id="@+id/pointsTeamB5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/pointsTeamB4"
+            android:layout_below="@+id/pointsTeamB4"
+            android:src="@drawable/points_0" />
+
+        <ImageView
+            android:id="@+id/pointsTeamB6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/pointsTeamB5"
+            android:layout_below="@+id/pointsTeamB5"
+            android:src="@drawable/points_0" />
+
+
+
+        <Button
+            android:id="@+id/decreaseTeamB"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:onClick="decreasePointsTeamB"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/increaseTeamB"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:onClick="increasePointsTeamB"
+            android:text="+" />
+
+
+        <TextView
+            android:id="@+id/pointsTeamB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textAlignment="center"
+            android:layout_toRightOf="@id/decreaseTeamB"
+            android:layout_toLeftOf="@id/increaseTeamB"
+            android:layout_alignTop="@+id/decreaseTeamB"
+            android:textSize="24sp"
+            android:paddingTop="7dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
